@@ -1,0 +1,33 @@
+{
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+        "source.fixAll.markdownlint": true,
+        "source.organizeImports": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    // Languages
+    "javascript.format.semicolons": "insert",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "[markdown]": {
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    },
+    "typescript.format.semicolons": "insert",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "js/ts.implicitProjectConfig.checkJs": true,
+
+    // Extentions
+    "cSpell.enableFiletypes": ["git-commit", "git-rebase"],
+    "cSpell.language": "en,es",
+    "cSpell.words": ["Praeco"],
+    "eslint.alwaysShowStatus": true,
+    "prettier.endOfLine": "lf",
+    "prettier.jsxBracketSameLine": true,
+    "prettier.jsxSingleQuote": true,
+    "prettier.singleQuote": false,
+    "prettier.requireConfig": false,
+    "prettier.tabWidth": 4
+}
