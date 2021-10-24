@@ -2,6 +2,7 @@ import { ExitToAppRounded, Help } from "@mui/icons-material";
 import { AppBar, Grid, Toolbar, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
+import Drawer from "./Drawer";
 
 const COLOR = "#990000";
 
@@ -37,6 +38,7 @@ const Layout: React.FC = (props) => {
                     </Grid>
                 </Toolbar>
             </AppBar>
+            <Drawer />
             {props.children}
         </Box>
     );
