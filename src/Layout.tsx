@@ -3,7 +3,9 @@ import { AppBar, Grid, Toolbar, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 
-function Layout() {
+const COLOR = "#990000";
+
+const Layout: React.FC = (props) => {
     return (
         <Box sx={{ flexGrow: 1 }}>
             <AppBar
@@ -15,12 +17,10 @@ function Layout() {
                 }}>
                 <Toolbar>
                     <Grid>
-                        <Typography variant='h3' sx={{ color: "#990000" }}>
+                        <Typography variant='h3' sx={{ color: COLOR }}>
                             Praeco
                         </Typography>
-                        <Typography
-                            variant='subtitle1'
-                            sx={{ color: "#990000" }}>
+                        <Typography variant='subtitle1' sx={{ color: COLOR }}>
                             Sistema de información al publico
                         </Typography>
                     </Grid>
@@ -37,8 +37,9 @@ function Layout() {
                     </Grid>
                 </Toolbar>
             </AppBar>
+            {props.children}
         </Box>
     );
-}
+};
 
 export default Layout;
